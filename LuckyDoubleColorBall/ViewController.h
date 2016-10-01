@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController
-
-
+-(IBAction)blueBallPressed:(id)sender;
+-(IBAction)redBallPressed:(id)sender;
 @end
 

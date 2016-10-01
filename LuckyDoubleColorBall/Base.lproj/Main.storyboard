@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -641,19 +642,19 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="599" y="360" width="1200" height="433"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -667,15 +668,528 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="443"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="LEi-PQ-dQC">
+                                <rect key="frame" x="27" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="1" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="41O-2Y-dOh">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redBallPressed:" target="XfG-lQ-9wD" id="8La-16-yrQ"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="2" translatesAutoresizingMaskIntoConstraints="NO" id="Zlv-6T-KKH">
+                                <rect key="frame" x="85" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="2" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="HsK-jo-qgC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="3" translatesAutoresizingMaskIntoConstraints="NO" id="hPE-Wh-Qe6">
+                                <rect key="frame" x="143" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="3" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="jpu-Ap-IJP">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                    <connections>
+                                        <action selector="redBallPressed:" target="XfG-lQ-9wD" id="GJ4-dB-VhS"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="5" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-Te-l62">
+                                <rect key="frame" x="259" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="5" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="o3e-H4-0wH">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redBallPressed:" target="XfG-lQ-9wD" id="3EN-z1-nWR"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="6" translatesAutoresizingMaskIntoConstraints="NO" id="Q2n-Kp-WPO">
+                                <rect key="frame" x="327" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="6" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="gqi-sD-TGz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="7" translatesAutoresizingMaskIntoConstraints="NO" id="Fsa-X5-U5o">
+                                <rect key="frame" x="396" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="7" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="88Z-HM-V80">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redBallPressed:" target="XfG-lQ-9wD" id="AeY-bv-gGP"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="8" translatesAutoresizingMaskIntoConstraints="NO" id="UXr-0N-dzT">
+                                <rect key="frame" x="463" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="8" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="DQl-jN-Mwq">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="9" translatesAutoresizingMaskIntoConstraints="NO" id="77x-T0-hPU">
+                                <rect key="frame" x="534" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="9" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" tag="9" imageScaling="proportionallyUpOrDown" inset="2" id="Tpn-h1-dbl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ye4-Vw-8bc">
+                                <rect key="frame" x="604" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="10" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="0Xy-n4-wUk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="11" translatesAutoresizingMaskIntoConstraints="NO" id="gla-lD-yve">
+                                <rect key="frame" x="669" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="11" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="U9I-HG-PE6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="12" translatesAutoresizingMaskIntoConstraints="NO" id="gW8-3g-D8L">
+                                <rect key="frame" x="27" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="12" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="S0X-bs-vvw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="13" translatesAutoresizingMaskIntoConstraints="NO" id="qUE-xG-cLv">
+                                <rect key="frame" x="85" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="13" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="nif-Ws-KSY">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="14" translatesAutoresizingMaskIntoConstraints="NO" id="ESa-E0-ERv">
+                                <rect key="frame" x="143" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="14" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="FfC-lL-fbi">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="15" translatesAutoresizingMaskIntoConstraints="NO" id="A2M-ag-n3B">
+                                <rect key="frame" x="201" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="15" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="ggw-1S-HjL">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="16" translatesAutoresizingMaskIntoConstraints="NO" id="nfP-kD-WAa">
+                                <rect key="frame" x="259" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="16" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="Dvi-AN-O9G">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="17" translatesAutoresizingMaskIntoConstraints="NO" id="aK7-9j-6UF">
+                                <rect key="frame" x="327" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="17" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="dEe-1b-Zw5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="18" translatesAutoresizingMaskIntoConstraints="NO" id="184-qh-cAJ">
+                                <rect key="frame" x="396" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="18" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="jUV-i0-mnG">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="19" translatesAutoresizingMaskIntoConstraints="NO" id="Mi3-nL-CIm">
+                                <rect key="frame" x="463" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="19" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="0n3-2c-p9V">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="20" translatesAutoresizingMaskIntoConstraints="NO" id="44v-wQ-vH2">
+                                <rect key="frame" x="534" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="20" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="JA1-0w-bAl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="21" translatesAutoresizingMaskIntoConstraints="NO" id="By7-Wo-qQk">
+                                <rect key="frame" x="604" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="21" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="y57-kx-9yd">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="22" translatesAutoresizingMaskIntoConstraints="NO" id="f4i-0E-p8a">
+                                <rect key="frame" x="669" y="295" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="22" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="RVR-RR-tdb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="23" translatesAutoresizingMaskIntoConstraints="NO" id="vcA-Tu-nbC">
+                                <rect key="frame" x="27" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="23" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="uLt-jw-pJw">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="24" translatesAutoresizingMaskIntoConstraints="NO" id="hKg-u5-0W9">
+                                <rect key="frame" x="85" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="24" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="EIO-ub-7Wc">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="25" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-gN-1We">
+                                <rect key="frame" x="143" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="25" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="aj0-J4-Zoi">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="26" translatesAutoresizingMaskIntoConstraints="NO" id="7nc-jI-JVo">
+                                <rect key="frame" x="201" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="26" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="J0h-wh-nJL">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="27" translatesAutoresizingMaskIntoConstraints="NO" id="VBv-6X-aTd">
+                                <rect key="frame" x="259" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="27" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="HJB-Lm-P8D">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-gg-9Gd">
+                                <rect key="frame" x="327" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="28" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="13e-AQ-GNT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="29" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-L0-tvc">
+                                <rect key="frame" x="396" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="29" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="lno-u5-qZR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="30" translatesAutoresizingMaskIntoConstraints="NO" id="ebW-5R-aIn">
+                                <rect key="frame" x="463" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="30" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="NfK-Uu-wBj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="31" translatesAutoresizingMaskIntoConstraints="NO" id="5kO-Gl-kFD">
+                                <rect key="frame" x="534" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="31" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="FE9-Kf-cZx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="32" translatesAutoresizingMaskIntoConstraints="NO" id="XZz-HX-14h">
+                                <rect key="frame" x="604" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="32" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="oxH-dW-vqg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="33" translatesAutoresizingMaskIntoConstraints="NO" id="9TW-gl-Pkl">
+                                <rect key="frame" x="669" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="33" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="RtV-8h-Je9">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="34" translatesAutoresizingMaskIntoConstraints="NO" id="iT0-iQ-pxJ">
+                                <rect key="frame" x="758" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="1" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="hOP-2V-6mC">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="35" translatesAutoresizingMaskIntoConstraints="NO" id="Z3P-iH-c1g">
+                                <rect key="frame" x="827" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="2" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="mwu-jm-5cz">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="36" translatesAutoresizingMaskIntoConstraints="NO" id="5kM-a7-RIM">
+                                <rect key="frame" x="894" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="3" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="p9f-iV-hS8">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="37" translatesAutoresizingMaskIntoConstraints="NO" id="JwN-YD-R8j">
+                                <rect key="frame" x="965" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="4" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="DcJ-gm-Hjf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="38" translatesAutoresizingMaskIntoConstraints="NO" id="c22-tg-Tei">
+                                <rect key="frame" x="1035" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="5" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="kHh-an-PIS">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="39" translatesAutoresizingMaskIntoConstraints="NO" id="bf9-oD-urK">
+                                <rect key="frame" x="1100" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="6" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="z3F-hW-r4o">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="40" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-xh-GuB">
+                                <rect key="frame" x="758" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="7" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="c46-zK-r9G">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="41" translatesAutoresizingMaskIntoConstraints="NO" id="0MM-e6-gHG">
+                                <rect key="frame" x="827" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="8" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="U6N-Zm-RyN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="42" translatesAutoresizingMaskIntoConstraints="NO" id="4MV-Ej-Avd">
+                                <rect key="frame" x="894" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="9" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="Ze4-cW-T6p">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="43" translatesAutoresizingMaskIntoConstraints="NO" id="OyG-hH-F3l">
+                                <rect key="frame" x="965" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="10" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="ssM-ce-DK2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="44" translatesAutoresizingMaskIntoConstraints="NO" id="kag-XH-HXH">
+                                <rect key="frame" x="1035" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="11" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="GeB-hY-rk5">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="45" translatesAutoresizingMaskIntoConstraints="NO" id="NPU-Gb-neC">
+                                <rect key="frame" x="1100" y="293" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="12" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="Kdn-gV-MBf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="46" translatesAutoresizingMaskIntoConstraints="NO" id="qGx-O5-Let">
+                                <rect key="frame" x="758" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="13" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="U5R-mb-3X0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="blueBallPressed:" target="XfG-lQ-9wD" id="AH8-mT-47N"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="47" translatesAutoresizingMaskIntoConstraints="NO" id="rRZ-jH-Xhd">
+                                <rect key="frame" x="827" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="14" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="XNb-J0-19e">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <button fixedFrame="YES" tag="49" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-6Y-Ojn">
+                                <rect key="frame" x="965" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="16" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="qN5-Cb-Gab">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0C-2s-e9B">
+                                <rect key="frame" x="33" y="417" width="30" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="红球" id="cy8-n9-f19">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-Lp-uuc">
+                                <rect key="frame" x="67" y="417" width="176" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="至少选6个" id="QiY-om-wCc">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSy-Xg-v4T">
+                                <rect key="frame" x="771" y="416" width="30" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="篮球" id="bRm-pF-BxX">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQy-ju-s1X">
+                                <rect key="frame" x="813" y="416" width="109" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="至少选一个" id="fP9-gs-frG">
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="52" translatesAutoresizingMaskIntoConstraints="NO" id="0Il-SR-tq7">
+                                <rect key="frame" x="180" y="164" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="机选红球" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="S29-pC-GFF">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="randonSelectingBolls:" target="XfG-lQ-9wD" id="ZJy-G5-2vq"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="54" translatesAutoresizingMaskIntoConstraints="NO" id="bH8-ZZ-bBa">
+                                <rect key="frame" x="296" y="172" width="38" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="清空" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZV0-gV-MX6">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="cellTitle"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearSelectedBalls:" target="XfG-lQ-9wD" id="8Qm-2f-a6U"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="53" translatesAutoresizingMaskIntoConstraints="NO" id="qiI-Je-bUb">
+                                <rect key="frame" x="888" y="162" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="机选篮球" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hfq-ce-kLn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="randonSelectingBolls:" target="XfG-lQ-9wD" id="Dbt-xh-Fwg"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="48" translatesAutoresizingMaskIntoConstraints="NO" id="ocA-Jk-0fH">
+                                <rect key="frame" x="894" y="229" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="15" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="LIG-RL-5lK">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                            </button>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" tag="50" translatesAutoresizingMaskIntoConstraints="NO" id="cfh-If-3P8">
+                                <rect key="frame" x="69" y="168" width="99" height="26"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="15" id="liK-sP-x5Z">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>6个</string>
+                                        <string>7个</string>
+                                        <string>8个</string>
+                                        <string>9个</string>
+                                        <string>10个</string>
+                                        <string>11个</string>
+                                        <string>12个</string>
+                                        <string>13个</string>
+                                        <string>14个</string>
+                                        <string>15个</string>
+                                        <string>16个</string>
+                                        <string>17个</string>
+                                        <string>18个</string>
+                                        <string>19个</string>
+                                        <string>20个</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" tag="51" translatesAutoresizingMaskIntoConstraints="NO" id="5RW-LZ-FHb">
+                                <rect key="frame" x="773" y="167" width="99" height="26"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="16" id="hkP-4n-6XJ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>1个</string>
+                                        <string>2个</string>
+                                        <string>3个</string>
+                                        <string>4个</string>
+                                        <string>5个</string>
+                                        <string>6个</string>
+                                        <string>7个</string>
+                                        <string>8个</string>
+                                        <string>9个</string>
+                                        <string>10个</string>
+                                        <string>11个</string>
+                                        <string>12个</string>
+                                        <string>13个</string>
+                                        <string>14个</string>
+                                        <string>15个</string>
+                                        <string>16个</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                            </comboBox>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="56" translatesAutoresizingMaskIntoConstraints="NO" id="04y-52-QE6">
+                                <rect key="frame" x="752" y="60" width="92" height="32"/>
+                                <buttonCell key="cell" type="push" title="选定列表" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QzZ-Dy-z5K">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="doubleBallsList:" target="XfG-lQ-9wD" id="jCR-aU-fB3"/>
+                                </connections>
+                            </button>
+                            <button fixedFrame="YES" tag="4" translatesAutoresizingMaskIntoConstraints="NO" id="r8e-7b-hU0">
+                                <rect key="frame" x="201" y="361" width="48" height="48"/>
+                                <buttonCell key="cell" type="square" title="4" alternateTitle="1" bezelStyle="shadowlessSquare" image="MacQQ_point_single_gray" imagePosition="overlaps" alignment="center" alternateImage="MacQQ_point_single" imageScaling="proportionallyUpOrDown" inset="2" id="nlh-B9-dRl">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="27"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="redBallPressed:" target="XfG-lQ-9wD" id="fab-64-0Xu"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" tag="55" translatesAutoresizingMaskIntoConstraints="NO" id="BDq-Tq-1wN">
+                                <rect key="frame" x="1001" y="169" width="38" height="19"/>
+                                <buttonCell key="cell" type="roundRect" title="清空" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="LcC-bv-xFg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="12" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="clearSelectedBalls:" target="XfG-lQ-9wD" id="t4C-bc-pgC"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uys-IJ-jox">
+                                <rect key="frame" x="192" y="25" width="517" height="115"/>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="OpQ-6P-ktH">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
                     </view>
+                    <connections>
+                        <outlet property="blueBox" destination="5RW-LZ-FHb" id="W78-j6-Fs9"/>
+                        <outlet property="list" destination="Uys-IJ-jox" id="YaM-NP-vGd"/>
+                        <outlet property="redBox" destination="cfh-If-3P8" id="lxa-Xu-htT"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="400" y="674.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MacQQ_point_single" width="16" height="16"/>
+        <image name="MacQQ_point_single_gray" width="16" height="16"/>
+    </resources>
 </document>

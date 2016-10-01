@@ -14,6 +14,7 @@
 		37CB0E381D9F4595007B4771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CB0E361D9F4595007B4771 /* Main.storyboard */; };
 		37CB0E431D9F4596007B4771 /* LuckyDoubleColorBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E421D9F4596007B4771 /* LuckyDoubleColorBallTests.m */; };
 		37CB0E4E1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E4D1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m */; };
+		37CB0E5D1D9FA766007B4771 /* ComboArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E5C1D9FA766007B4771 /* ComboArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		37CB0E491D9F4596007B4771 /* LuckyDoubleColorBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDoubleColorBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CB0E4D1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyDoubleColorBallUITests.m; sourceTree = "<group>"; };
 		37CB0E4F1D9F4596007B4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CB0E5B1D9FA766007B4771 /* ComboArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboArray.h; sourceTree = "<group>"; };
+		37CB0E5C1D9FA766007B4771 /* ComboArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 				37CB0E2C1D9F4595007B4771 /* AppDelegate.m */,
 				37CB0E311D9F4595007B4771 /* ViewController.h */,
 				37CB0E321D9F4595007B4771 /* ViewController.m */,
+				37CB0E5B1D9FA766007B4771 /* ComboArray.h */,
+				37CB0E5C1D9FA766007B4771 /* ComboArray.m */,
 				37CB0E341D9F4595007B4771 /* Assets.xcassets */,
 				37CB0E361D9F4595007B4771 /* Main.storyboard */,
 				37CB0E391D9F4595007B4771 /* Info.plist */,
@@ -268,6 +273,7 @@
 			files = (
 				37CB0E331D9F4595007B4771 /* ViewController.m in Sources */,
 				37CB0E301D9F4595007B4771 /* main.m in Sources */,
+				37CB0E5D1D9FA766007B4771 /* ComboArray.m in Sources */,
 				37CB0E2D1D9F4595007B4771 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
