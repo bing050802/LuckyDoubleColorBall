@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37CB0E2D1D9F4595007B4771 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E2C1D9F4595007B4771 /* AppDelegate.m */; };
+		37CB0E301D9F4595007B4771 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E2F1D9F4595007B4771 /* main.m */; };
+		37CB0E331D9F4595007B4771 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E321D9F4595007B4771 /* ViewController.m */; };
+		37CB0E351D9F4595007B4771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CB0E341D9F4595007B4771 /* Assets.xcassets */; };
+		37CB0E381D9F4595007B4771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CB0E361D9F4595007B4771 /* Main.storyboard */; };
+		37CB0E431D9F4596007B4771 /* LuckyDoubleColorBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E421D9F4596007B4771 /* LuckyDoubleColorBallTests.m */; };
+		37CB0E4E1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB0E4D1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37CB0E3F1D9F4596007B4771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37CB0E201D9F4595007B4771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37CB0E271D9F4595007B4771;
+			remoteInfo = LuckyDoubleColorBall;
+		};
+		37CB0E4A1D9F4596007B4771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37CB0E201D9F4595007B4771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37CB0E271D9F4595007B4771;
+			remoteInfo = LuckyDoubleColorBall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37CB0E281D9F4595007B4771 /* LuckyDoubleColorBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyDoubleColorBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CB0E2B1D9F4595007B4771 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37CB0E2C1D9F4595007B4771 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37CB0E2F1D9F4595007B4771 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37CB0E311D9F4595007B4771 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37CB0E321D9F4595007B4771 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37CB0E341D9F4595007B4771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37CB0E371D9F4595007B4771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37CB0E391D9F4595007B4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CB0E3E1D9F4596007B4771 /* LuckyDoubleColorBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDoubleColorBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CB0E421D9F4596007B4771 /* LuckyDoubleColorBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyDoubleColorBallTests.m; sourceTree = "<group>"; };
+		37CB0E441D9F4596007B4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37CB0E491D9F4596007B4771 /* LuckyDoubleColorBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyDoubleColorBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37CB0E4D1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyDoubleColorBallUITests.m; sourceTree = "<group>"; };
+		37CB0E4F1D9F4596007B4771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37CB0E251D9F4595007B4771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E3B1D9F4596007B4771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E461D9F4596007B4771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37CB0E1F1D9F4595007B4771 = {
+			isa = PBXGroup;
+			children = (
+				37CB0E2A1D9F4595007B4771 /* LuckyDoubleColorBall */,
+				37CB0E411D9F4596007B4771 /* LuckyDoubleColorBallTests */,
+				37CB0E4C1D9F4596007B4771 /* LuckyDoubleColorBallUITests */,
+				37CB0E291D9F4595007B4771 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37CB0E291D9F4595007B4771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37CB0E281D9F4595007B4771 /* LuckyDoubleColorBall.app */,
+				37CB0E3E1D9F4596007B4771 /* LuckyDoubleColorBallTests.xctest */,
+				37CB0E491D9F4596007B4771 /* LuckyDoubleColorBallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37CB0E2A1D9F4595007B4771 /* LuckyDoubleColorBall */ = {
+			isa = PBXGroup;
+			children = (
+				37CB0E2B1D9F4595007B4771 /* AppDelegate.h */,
+				37CB0E2C1D9F4595007B4771 /* AppDelegate.m */,
+				37CB0E311D9F4595007B4771 /* ViewController.h */,
+				37CB0E321D9F4595007B4771 /* ViewController.m */,
+				37CB0E341D9F4595007B4771 /* Assets.xcassets */,
+				37CB0E361D9F4595007B4771 /* Main.storyboard */,
+				37CB0E391D9F4595007B4771 /* Info.plist */,
+				37CB0E2E1D9F4595007B4771 /* Supporting Files */,
+			);
+			path = LuckyDoubleColorBall;
+			sourceTree = "<group>";
+		};
+		37CB0E2E1D9F4595007B4771 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37CB0E2F1D9F4595007B4771 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37CB0E411D9F4596007B4771 /* LuckyDoubleColorBallTests */ = {
+			isa = PBXGroup;
+			children = (
+				37CB0E421D9F4596007B4771 /* LuckyDoubleColorBallTests.m */,
+				37CB0E441D9F4596007B4771 /* Info.plist */,
+			);
+			path = LuckyDoubleColorBallTests;
+			sourceTree = "<group>";
+		};
+		37CB0E4C1D9F4596007B4771 /* LuckyDoubleColorBallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37CB0E4D1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m */,
+				37CB0E4F1D9F4596007B4771 /* Info.plist */,
+			);
+			path = LuckyDoubleColorBallUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37CB0E271D9F4595007B4771 /* LuckyDoubleColorBall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CB0E521D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBall" */;
+			buildPhases = (
+				37CB0E241D9F4595007B4771 /* Sources */,
+				37CB0E251D9F4595007B4771 /* Frameworks */,
+				37CB0E261D9F4595007B4771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyDoubleColorBall;
+			productName = LuckyDoubleColorBall;
+			productReference = 37CB0E281D9F4595007B4771 /* LuckyDoubleColorBall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37CB0E3D1D9F4596007B4771 /* LuckyDoubleColorBallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CB0E551D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBallTests" */;
+			buildPhases = (
+				37CB0E3A1D9F4596007B4771 /* Sources */,
+				37CB0E3B1D9F4596007B4771 /* Frameworks */,
+				37CB0E3C1D9F4596007B4771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37CB0E401D9F4596007B4771 /* PBXTargetDependency */,
+			);
+			name = LuckyDoubleColorBallTests;
+			productName = LuckyDoubleColorBallTests;
+			productReference = 37CB0E3E1D9F4596007B4771 /* LuckyDoubleColorBallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37CB0E481D9F4596007B4771 /* LuckyDoubleColorBallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37CB0E581D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBallUITests" */;
+			buildPhases = (
+				37CB0E451D9F4596007B4771 /* Sources */,
+				37CB0E461D9F4596007B4771 /* Frameworks */,
+				37CB0E471D9F4596007B4771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37CB0E4B1D9F4596007B4771 /* PBXTargetDependency */,
+			);
+			name = LuckyDoubleColorBallUITests;
+			productName = LuckyDoubleColorBallUITests;
+			productReference = 37CB0E491D9F4596007B4771 /* LuckyDoubleColorBallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37CB0E201D9F4595007B4771 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = LK;
+				TargetAttributes = {
+					37CB0E271D9F4595007B4771 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					37CB0E3D1D9F4596007B4771 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 37CB0E271D9F4595007B4771;
+					};
+					37CB0E481D9F4596007B4771 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 37CB0E271D9F4595007B4771;
+					};
+				};
+			};
+			buildConfigurationList = 37CB0E231D9F4595007B4771 /* Build configuration list for PBXProject "LuckyDoubleColorBall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37CB0E1F1D9F4595007B4771;
+			productRefGroup = 37CB0E291D9F4595007B4771 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37CB0E271D9F4595007B4771 /* LuckyDoubleColorBall */,
+				37CB0E3D1D9F4596007B4771 /* LuckyDoubleColorBallTests */,
+				37CB0E481D9F4596007B4771 /* LuckyDoubleColorBallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37CB0E261D9F4595007B4771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CB0E351D9F4595007B4771 /* Assets.xcassets in Resources */,
+				37CB0E381D9F4595007B4771 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E3C1D9F4596007B4771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E471D9F4596007B4771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37CB0E241D9F4595007B4771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CB0E331D9F4595007B4771 /* ViewController.m in Sources */,
+				37CB0E301D9F4595007B4771 /* main.m in Sources */,
+				37CB0E2D1D9F4595007B4771 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E3A1D9F4596007B4771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CB0E431D9F4596007B4771 /* LuckyDoubleColorBallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37CB0E451D9F4596007B4771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CB0E4E1D9F4596007B4771 /* LuckyDoubleColorBallUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37CB0E401D9F4596007B4771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37CB0E271D9F4595007B4771 /* LuckyDoubleColorBall */;
+			targetProxy = 37CB0E3F1D9F4596007B4771 /* PBXContainerItemProxy */;
+		};
+		37CB0E4B1D9F4596007B4771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37CB0E271D9F4595007B4771 /* LuckyDoubleColorBall */;
+			targetProxy = 37CB0E4A1D9F4596007B4771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37CB0E361D9F4595007B4771 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37CB0E371D9F4595007B4771 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37CB0E501D9F4596007B4771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		37CB0E511D9F4596007B4771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		37CB0E531D9F4596007B4771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37CB0E541D9F4596007B4771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		37CB0E561D9F4596007B4771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDoubleColorBall.app/Contents/MacOS/LuckyDoubleColorBall";
+			};
+			name = Debug;
+		};
+		37CB0E571D9F4596007B4771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyDoubleColorBall.app/Contents/MacOS/LuckyDoubleColorBall";
+			};
+			name = Release;
+		};
+		37CB0E591D9F4596007B4771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LuckyDoubleColorBall;
+			};
+			name = Debug;
+		};
+		37CB0E5A1D9F4596007B4771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LuckyDoubleColorBallUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LK.LuckyDoubleColorBallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LuckyDoubleColorBall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37CB0E231D9F4595007B4771 /* Build configuration list for PBXProject "LuckyDoubleColorBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CB0E501D9F4596007B4771 /* Debug */,
+				37CB0E511D9F4596007B4771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37CB0E521D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CB0E531D9F4596007B4771 /* Debug */,
+				37CB0E541D9F4596007B4771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37CB0E551D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CB0E561D9F4596007B4771 /* Debug */,
+				37CB0E571D9F4596007B4771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37CB0E581D9F4596007B4771 /* Build configuration list for PBXNativeTarget "LuckyDoubleColorBallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37CB0E591D9F4596007B4771 /* Debug */,
+				37CB0E5A1D9F4596007B4771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37CB0E201D9F4595007B4771 /* Project object */;
+}
